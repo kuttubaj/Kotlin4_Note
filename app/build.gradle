@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace 'com.example.kotlin4_not'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.example.kotlin4_not"
         minSdk 24
-        targetSdk 33
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 

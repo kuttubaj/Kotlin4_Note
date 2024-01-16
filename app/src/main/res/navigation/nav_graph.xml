@@ -10,4 +10,29 @@
         android:name="com.example.kotlin4_not.presentation.ui.fragments.home.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/onBoardPageFirst"
+        android:name="com.example.noteapp.ui.fragments.onboard.OnBoardPageFirst"
+        android:label="OnBoardPageFirst" />
+    <fragment
+        android:id="@+id/onBoardPageSecond"
+        android:name="com.example.kotlin4_not.presentation.ui.fragments.onboard.OnBoardPageSecond"
+        android:label="OnBoardPageSecond" />
+    <fragment
+        android:id="@+id/onBoardPageThird"
+        android:name="com.example.kotlin4_not.presentation.ui.fragments.onboard.OnBoardPageThird"
+        android:label="OnBoardPageThird" />
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="com.example.kotlin4_not.presentation.ui.fragments.onboard.ViewPagerFragment"
+        android:label="ViewPagerFragment" >
+        <action
+            android:id="@+id/action_viewPagerFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.kotlin4_not.presentation.ui.activity.MainActivity"
+        android:label="fragment_view_pager"
+        tools:layout="@layout/fragment_view_pager" />
 </navigation>

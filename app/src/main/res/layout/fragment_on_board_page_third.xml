@@ -20,6 +20,7 @@
         app:lottie_rawRes="@raw/third_animation" />
 
     <TextView
+        android:id="@+id/tv_on_board_third"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"

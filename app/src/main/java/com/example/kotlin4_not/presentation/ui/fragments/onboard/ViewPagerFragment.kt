@@ -9,7 +9,6 @@ import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2.OnPageChangeCallback
 import com.example.kotlin4_not.R
 import com.example.kotlin4_not.databinding.FragmentViewPagerBinding
-import com.example.kotlin4_not.presentation.ui.fragments.onboard.OnBoardAdapter
 
 class ViewPagerFragment : Fragment(R.layout.fragment_view_pager) {
 

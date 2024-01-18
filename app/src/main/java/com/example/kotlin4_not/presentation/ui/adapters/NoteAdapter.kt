@@ -3,23 +3,23 @@ package com.example.kotlin4_not.presentation.ui.adapters
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.kotlin4_not.data.local.room.entites.Note
 import com.example.kotlin4_not.data.models.NotesModel
 import com.example.kotlin4_not.databinding.NoteItemBinding
 
 class NoteAdapter : RecyclerView.Adapter<NoteAdapter.NoteViewHolder>() {
 
-    private var noteList = mutableListOf<NotesModel>()
-
-    fun setNoteList(noteList: MutableList<NotesModel>) {
+    private var noteList = listOf<Note>()
+    fun setNoteList(noteList: List<Note>) {
         this.noteList = noteList
     }
 
     class NoteViewHolder(private val binding: NoteItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
-        fun onBind(notesModel: NotesModel) {
-            binding.tvNote.text = notesModel.note
+        fun onBind(notesModel: Note) {
+            binding.tvNote.text = notesModel.description
             binding.tvTitleNote.text = notesModel.title
-            binding.tvDataTime.text = notesModel.data
+            binding.tvDataTime.text = notesModel.date.toString()
 
         }
     }

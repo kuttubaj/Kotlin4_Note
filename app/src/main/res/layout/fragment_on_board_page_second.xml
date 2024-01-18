@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    android:orientation="vertical"
     android:gravity="center"
+    android:orientation="vertical"
     tools:context=".presentation.ui.fragments.onboard.OnBoardPageSecond">
 
     <com.airbnb.lottie.LottieAnimationView
@@ -14,13 +14,14 @@
         android:layout_width="300dp"
         android:layout_height="280dp"
         android:layout_gravity="center_horizontal"
-        app:lottie_imageAssetsFolder="images/"
         app:lottie_autoPlay="true"
-        app:lottie_renderMode="hardware"
+        app:lottie_imageAssetsFolder="images/"
+        app:lottie_loop="true"
         app:lottie_rawRes="@raw/second_animation"
-        app:lottie_loop="true" />
+        app:lottie_renderMode="hardware" />
 
     <TextView
+        android:id="@+id/tv_on_board_second"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"

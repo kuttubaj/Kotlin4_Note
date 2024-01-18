@@ -12,19 +12,20 @@
         android:layout_width="300dp"
         android:layout_height="280dp"
         android:layout_gravity="center_horizontal"
-        app:lottie_imageAssetsFolder="images/"
         app:lottie_autoPlay="true"
-        app:lottie_rawRes="@raw/first_animation"
-        app:lottie_loop="true" />
+        app:lottie_imageAssetsFolder="images/"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/first_animation" />
 
     <TextView
+        android:id="@+id/tv_on_board_first"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="70dp"
-        android:textSize="16sp"
         android:text="@string/page_first_text"
         android:textAlignment="center"
-        android:textColor="@color/light_gray_for_text" />
+        android:textColor="@color/light_gray_for_text"
+        android:textSize="16sp" />
 
 </LinearLayout>
